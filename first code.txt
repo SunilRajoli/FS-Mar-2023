@@ -1,0 +1,3 @@
+public static main void(string[] args){
+	system.out.println("Hello! Welcome")
+}
