@@ -1,0 +1,352 @@
+<!--
+    HTML is a standard markup language for creating web pages.
+    HTML stands for Hyper Text Markup Language.
+-->
+<!--Basic structure of webpage-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+    <style>
+        body{
+            color: red;
+        }
+    </style>
+    <script>
+        function myFunction(){
+            var x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+    </script>
+</head>
+<body>
+    <p>This is the HTML document.</p>
+    <p>This is Javascript function that captilize my name:</p>
+    Enter your name: <input type="text" id="fname" onchange="myFunction()">
+    <p>This is line 1. <br> This is line 2. &nbsp; &nacute; &nabla; &nang; &nap; &napE; &napid; &napos; &napprox; &natur; &natural; &naturals; This is line 3.</p>
+<!--Header tags-->
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6>
+<!--Text Formatting-->
+    <Strong>Bold Text</Strong>
+    <em>Italic Text</em>
+    <strike>Strike Text</strike>
+    <u><strong><em>Bold, Italic and Underlined Text</em></strong></u>
+<!--Inline Text Formatting-->
+    <h4> <font face="arial" size="22" color="blue">Header 4</font></h4>
+<!--Unordered lists-->
+    <h3>My Favorite sports</h3>
+    <ul>
+        <li>Football</li>
+        <li>Cricket</li>
+        <li>Baseball</li>
+    </ul>
+<!--Ordered lists-->
+    <h3>My favorite Vacation Spots</h3>
+    <ol>
+        <li>Miami, FL</li>
+        <li>NewYork, NY</li>
+        <li>Lost Vegas, NV</li>
+    </ol>
+<!--Image insertion-->
+    <img src="https://www.travelalerts.ca/wp-content/uploads/2018/06/Miami.jpg" width="333" height="250">
+    <img src="https://www.wallpaperflare.com/static/993/597/222/new-york-city-cityscape-city-usa-wallpaper.jpg" width="333" height="250">
+    <img src="https://i.insider.com/53af22106bb3f710764de86b" width="333" height="250"> <br>
+<!--Video Embedding-->
+    <video width="600" controls>
+        <source src="./pexels-nathan-cowley-2480792-1920x1080-24fps.mp4" type="video/mp4">
+        Your browser doesnot support video tag.
+    </video> <br>
+<!--Link Creation-->
+    <a href="http://www.miami.com"><img src="https://www.travelalerts.ca/wp-content/uploads/2018/06/Miami.jpg" width="333" height="250"></a>
+    <a href="http://www.newyork.com"><img src="https://www.wallpaperflare.com/static/993/597/222/new-york-city-cityscape-city-usa-wallpaper.jpg" width="333" height="250"></a>
+    <a href="http://www.lasvegas.com"><img src="https://i.insider.com/53af22106bb3f710764de86b" width="333" height="250"> <br></a>
+<!--anchor tag-->
+    <p><h1>Table of contents:</h1></p>
+    <ul>
+        <li><a href="#article1">Article1</a></li>
+        <li><a href="#article2">Article2</a></li>
+        <li><a href="#article3">Article3</a></li>
+    </ul>
+    <p><h1><a id="article1"></a>Article1</h1></p>
+    <p>Farmers in Mexico desperate for rain are asking their government to ‘bomb’ the clouds. The country is experiencing its second-worst drought in a decade, and farmers are afraid for their crops and livestock. So they’ve asked the Mexican government to use cloud-seeding technology to help them. <br>
+        NEWS
+01 May 2023
+Mexico is seeding clouds to make rain — scientists aren’t sure it works
+Researchers question the government’s investment, given uncertainties about the technology.
+Myriam Vidal Valero
+Twitter Facebook Email
+A member of the Air Force sit next to the tanks with cloud seeding solution in a King Air 350i plane.
+The Mexican government has worked with members of its Air Force to disperse particles into clouds with the aim of increasing precipitation. (Spanish translation: El gobierno mexicano ha trabajado con miembros de su Fuerza Aérea para dispersar partículas dentro de las nubes con el objetivo de incrementar la precipitación.)Credit: Jesús Bustamante/Reuters
+
+To read this story in Spanish, scroll to the bottom.
+
+Farmers in Mexico desperate for rain are asking their government to ‘bomb’ the clouds. The country is experiencing its second-worst drought in a decade, and farmers are afraid for their crops and livestock. So they’ve asked the Mexican government to use cloud-seeding technology to help them.
+
+In March, the National Commission for Arid Zones (Conaza), a branch of the country’s agriculture ministry, announced that it would launch a rain-stimulation programme in the northeastern and northwestern states of Tamaulipas and Baja California, respectively. <br>
+    </p>
+    <p><h1><a id="article2"></a>Article2</h1></p>
+    <p>
+        Over the past decade, China’s once-pollution-choked skies have steadily improved, according to more than two decades of atmospheric measurements taken by NASA satellites. But researchers say that there is still a long way to go to clean China’s air and protect the health of its citizens.
+
+The speed at which China has reduced its air pollution has been “impressive”, says Chi Li, an atmospheric scientist at Washington University of St. Louis in Missouri, owing to technological solutions and ambitious policies. <br>
+NEWS
+01 May 2023
+Air pollution in China is falling — but there is a long way to go
+Easy gains from upgrading power-plant smokestacks will be strengthened only by deeper policy changes.
+Dyani Lewis
+Twitter Facebook Email
+Man flies kite at The Bund on December 5, 2013 in Shanghai, China.
+Parts of China continue to be affected by heavy smog.Credit: Getty
+
+Over the past decade, China’s once-pollution-choked skies have steadily improved, according to more than two decades of atmospheric measurements taken by NASA satellites. But researchers say that there is still a long way to go to clean China’s air and protect the health of its citizens.
+
+The speed at which China has reduced its air pollution has been “impressive”, says Chi Li, an atmospheric scientist at Washington University of St. Louis in Missouri, owing to technological solutions and ambitious policies.
+
+FRESH AIR. Graphic plots China’s efforts to tackle air pollution but levels are still far above the guideline recommended by WHO
+Source: Atmospheric Composition Analysis Group, Washington University of St. Louis
+
+Each year, air pollution is responsible for more than four million premature deaths globally — including an estimated one million in China — primarily from heart disease, lung cancer and respiratory illnesses. Fine particulate matter with a diameter of 2.5 micrometres or less — referred to as PM2.5 — is the most concerning air pollutant, says Li.
+
+The university’s Atmospheric Composition Analysis Group, which Li is part of, monitors various pollutants and estimates their global health impacts. The data for China show that from the late 1990s, average annual PM2.5 exposure in the country rose from 35 to more than 50 micrograms per cubic metre, before levelling out around 2006 at between 50 and 601. Since 2013, PM2.5 levels have steadily declined, and in 2021, the average annual exposure was 33.3 micrograms per cubic metre (see ‘Fresh air’). That’s below the nation’s air-quality standard of 35, but still much higher that the recommended level of 5 set by the World Health Organization (WHO), based in Geneva, Switzerland.
+    </p>
+    <p><h1><a id="article3"></a>Article3</h1></p>
+    <p>
+        An institute that aims to improve how equality and diversity policies are applied to brain research has launched at University College London. The founders say that although equity, diversity and inclusion (EDI) guidelines are now common in research, they do not necessarily lead to scientists applying the values to their studies and work environments in practice.
+
+Many universities, scientific journals and funding agencies have EDI principles, says Aikaterini Fotopoulou, a University College London (UCL) neuropsychologist and leader of the Centre for Equality Research in Brain Sciences (ERB Centre), which launched on 19 April. “But that’s not the same as knowing how to do equality. Intention is not action.”
+
+Researchers and clinicians at the ERB Centre will study how to best practice EDI in the brain and mind sciences — from increasing the diversity of study participants to ensuring that the field includes scientists from a range of backgrounds and supports them with evidence-based EDI policies throughout their careers.
+
+“EDI are often thought to be issues that can be discussed administratively without oftentimes using research backing, so having a research centre dedicated to these issues will be a big leap for the field,” says Mahmoud Maina, a neuroscientist at the University of Sussex in Brighton, UK.
+    </p>
+<!--Tables-->
+    <table width="100%" border="1" bordercolor="blue" cellspacing="2" cellpadding="2">
+        <tr>
+            <td>Sport</td>
+            <td>Response</td>
+        </tr>
+        <tr>
+            <td>BasketBall</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Baseball</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <td>Hockey</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>Soccer</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Tennis</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Football</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Other</td>
+            <td>15</td>
+        </tr>
+    </table> <br>
+<!--Nested Tables-->
+    <table width="100%" border="1" bordercolor="blue" cellspacing="2" cellpadding="2">
+        <tr>
+            <td>
+                <table width="600" border="1" bordercolor="red" cellspacing="2" cellpadding="2">
+                    <tr>
+                        <td>Sport</td>
+                        <td>Response</td>
+                    </tr>
+                    <tr>
+                        <td>BasketBall</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Baseball</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>Hockey</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td>Soccer</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>Tennis</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>Football</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Other</td>
+                        <td>15</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+<!--Merging Cells-->
+    <table width="600" border="1">
+        <tr>
+            <td colspan="2" align="center">My Expenses</td>
+        </tr>
+        <tr>
+            <td>Month</td>
+            <td>Amount</td>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>$200</td>
+        </tr>
+    </table>
+<!--Text Wrapping-->
+<table width="600" border="1">
+    <tr>
+        <td colspan="2" align="center">My Expenses: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, incidunt quos laboriosam consequatur iste sed.</td>
+    </tr>
+    <tr>
+        <td>Month</td>
+        <td>Amount</td>
+    </tr>
+    <tr>
+        <td>January</td>
+        <td>$100</td>
+    </tr>
+    <tr>
+        <td>February</td>
+        <td>$100</td>
+    </tr>
+    <tr>
+        <td>Total</td>
+        <td>$200</td>
+    </tr>
+</table>
+<br>
+<table width="600" border="1">
+    <tr>
+        <td colspan="2" align="center" nowrap>My Expenses: Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui tempore quae velit illum asperiores molestiae.</td>
+    </tr>
+    <tr>
+        <td>Month</td>
+        <td>Amount</td>
+    </tr>
+    <tr>
+        <td>January</td>
+        <td>$100</td>
+    </tr>
+    <tr>
+        <td>February</td>
+        <td>$100</td>
+    </tr>
+    <tr>
+        <td>Total</td>
+        <td>$200</td>
+    </tr>
+</table>
+<!--Cell alignment-->
+<table width="600" border="1">
+    <tr>
+        <td colspan="2" align="center">My Expenses</td>
+    </tr>
+    <tr>
+        <td>Month</td>
+        <td>Amount</td>
+    </tr>
+    <tr>
+        <td>January</td>
+        <td>$100</td>
+    </tr>
+    <tr>
+        <td align="right">February</td>
+        <td>$100</td>
+    </tr>
+    <tr>
+        <td align="center">Total</td>
+        <td>$200</td>
+    </tr>
+</table>
+<!--Form-->
+    <form action="send.php" method="post">
+        <h2>Employment Application</h2>
+        <div>
+            <label>First Name:</label>
+            <input type="text" name="fname">
+        </div>
+        <div>
+            <label>Last Name:</label>
+            <input type="text" name="lname">
+        </div>
+        <div>
+            <label>Position:</label>
+            <select name="position" id="">
+                <option value="AC">Accountant</option>
+                <option value="RE">Receptionist</option>
+                <option value="AD">Administrator</option>
+                <option value="SU">Supervisor</option>
+            </select>
+        </div>
+        <div>
+            <label>Experience Level:</label>
+            <select name="experience" id="">
+                <option value="EL">Entry Level</option>
+                <option value="SE">Some Experienced</option>
+                <option value="VE">Very Experienced</option>
+            </select>
+        </div>
+        <div>
+            <label>Job Type:</label>
+            <input type="checkbox" name="ft">Full-Time
+            <input type="checkbox" name="pt">Part-Time
+            <input type="checkbox" name="ct">Contract
+        </div>
+        <div>
+            <label>Employment Status:</label>
+            <input type="radio" name="estatus" value="employed">Employed
+            <input type="radio" name="estatus" value="unemployed">unemployed
+            <input type="radio" name="estatus" value="student">Student
+        </div>
+        <div>
+            <label>Additional Comments:</label>
+            <textarea name="comment" id="" cols="45" rows="5"></textarea>
+        </div>
+        <input type="submit" name="submit" value="submit">
+        <input type="reset" name="reset" value="reset">
+    </form>
+    <br>
+<!--IFrames-->
+    <iframe src="http://www.ask.com" width="100%" height="400">
+        <p>Your browser doesnot support iframes.</p>
+    </iframe>
+    
+    <iframe src="http://www.bing.com" width="100%" height="400">
+        <p>Your browser doesnot support iframes.</p>
+    </iframe>
+    
+</body>
+</html>
