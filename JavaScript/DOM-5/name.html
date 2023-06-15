@@ -1,0 +1,24 @@
+<!--
+    document.getElementByName():
+        methods return all the elements of specified name.
+syntax:
+    document.getElementByName("name");
+-->
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            Male: <input type="radio" name="gender" value="male">
+            Female: <input type="radio" name="gender" value="female">
+            <input type="button" value="Total Genders" onclick="totalelements()">
+        </form>
+        <script>
+            function totalelements(){
+                var allgenders = document.getElementsByName("name");
+                alert("Total Genders: "+allgenders.length);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!--
+    Browser Object Model(BOM):
+            BOM is used to interact with the browser.
+            window.alert("Hello! Javapoint");
+-->
+<!--
+    Window Object:
+            It represents the window of the browser.
+            An object of window is created automatically by the browser.
+            Window is object of browser, not the object of javascript.
+Methods:
+            prompt() - displays a dialog box to get input from user.
+            alert() - displays the alert box containing message with ok buttton.
+            confirm() - displays the dialog box containing message with ok and cancel button.
+            open() - opens new window.
+            close() - closes the current window.
+            setTimeOut() - performs actions after specified time like calling function, evaluating expressions etc.
+-->
+<!--alert()-->
+<!--
+    <html>
+    <head>
+
+    </head>
+    <body>
+        <input type="button" value="Click Here" onclick="msg()">
+    </body>
+    <script>
+        function msg(){
+            alert("Hello! Welcome");
+        }
+    </script>
+</html>
+-->
+<!--confirm()-->
+<!--
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="button" value="delete Record" onclick="msg()">
+        <script type="text/javascript">
+            function msg(){
+                var v = confirm("Are u sure?");
+                if(v == true){
+                    alert("Ok");
+                }else{
+                    alert("Cancel");
+                }
+            }
+        </script>
+    </body>
+</html>
+-->
+<!--prompt-->
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="button" value="Click" onclick="msg()">
+        <script type="text/javascript">
+            function msg(){
+                var v = prompt("Who are u?")
+                alert("I am "+v);
+            }
+        </script>
+    </body>
+</html>
+

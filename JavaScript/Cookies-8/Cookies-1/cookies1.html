@@ -1,0 +1,40 @@
+<!--
+Javacsript Cookies:
+            A cookie is an amount of information that persists between a server side and client side.
+            A web browser stores the information at the time of browsing.
+            A cookie contains the information as a string generally in the form of a name-value pair separated by semi-colons.
+            It maintains the state of a user and remembers the user's information among all the web pages.
+How cookies work?
+            When a user sends a request to the server, then each of that request is treated as a new request sent by the different user.
+            So, to recognize the old user, we need to add the cookie with the response from the server.
+            browser at the client-side.
+            Now, whenever a user sends a request to the server, the cookie is added with that request automatically.
+            Due to the cookie, the server recognizes the users.
+Create a cookie?
+            In JavaScript, we can create, read, update and delete a cookie by using document.cookie property.
+syntax:
+            document.cookie = "name=value";
+-->
+<!--example to set and get a cookie.-->
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="buttton" value="setCookie" onclick="setCookie()">
+        <input type="button" value="getCookie" onclick="getCookie()">
+        <script>
+            function setCookie(){
+                document.cookie="username=Duke martin";
+            }
+            function getCookie(){
+                if(document.cookie.length!=0){
+                    alert(document.cookie)
+                }
+                else{
+                    alert("Cookir not available")
+                }
+            }
+        </script>
+    </body>
+</html>

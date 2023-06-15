@@ -1,0 +1,22 @@
+<!--
+    document.getElementByTagName:
+        methods return all the elements of specified tagname.
+syntax:
+    document.getElementByTagName("name")
+-->
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p>This is paragraph.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <button onclick="countpara()">total paragraphs</button>
+    </body>
+    <script>
+        function countpara(){
+            var totalpara = document.getElementsByTagName("p");
+            alert("total p tags are: " +totalpara.length);
+        }
+    </script>
+</html>

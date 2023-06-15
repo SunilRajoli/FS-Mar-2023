@@ -1,0 +1,33 @@
+<!--
+    Javascript Form Validation:
+            It is important to validate the form submitted by the user because it can have inappropriate values.
+            So, validation is must to authenticate user.
+            Through JavaScript, we can validate name, password, email, date, mobile numbers and more fields.
+-->
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="abc.jsp" name="myform" method="post" onsubmit="return validateform()">
+            Name: <input type="text" name="name"><br/>
+            Password: <input type="password" name="password"><br/>
+            <input type="submit" value="register">
+        </form>
+        <script>
+            function validateform(){
+                var name = document.myform.name.value;
+                var password = document.myform.password.value;
+
+                if(name == null || name == ""){
+                    alert("Name can't be blanked");
+                    return false;
+                }
+                else if(password.length < 6){
+                    alert("Password must be atleast 6 characters long.");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>

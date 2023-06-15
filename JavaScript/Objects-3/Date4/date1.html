@@ -1,0 +1,23 @@
+<!--
+    Javascript Date object:
+            Jvacsript date object is used to get year, month and day.
+            you can display a timer on web page by help of javascript date object.
+4 ways of date constructor to create date object:
+            Date()
+            Date(milliseconds)
+            Date(datestring)
+            Date(year, month, day, hours, minutes, seconds, milliseconds).
+-->
+<html>
+    <head>
+
+    </head>
+    <body>
+        Current Date and Time: <span id="txt"></span>
+    </body>
+    <script>
+        var today = new Date();
+        document.getElementById('txt').innerHTML = today;
+    </script>
+</html>
+

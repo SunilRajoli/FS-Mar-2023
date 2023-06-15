@@ -1,0 +1,41 @@
+<!--
+Cookie with multiple Name Value Pair:
+            In JavaScript, a cookie can contain only a single name-value pair. However, to store more than one name-value pair, we can use the following approach: -
+                Serialize the custom object in a JSON string, parse it and then store in a cookie.
+                For each name-value pair, use a separate cookie.
+-->
+<!--example to check whether a cookie contains more than one name-value pair.-->
+<!DOCTYPE html>  
+<html>  
+<head>  
+</head>  
+<body>  
+    Name: <input type="text" id="name"><br>  
+    Email: <input type="email" id="email"><br>  
+    Course: <input type="text" id="course"><br>  
+<input type="button" value="Set Cookie" onclick="setCookie()">  
+<input type="button" value="Get Cookie" onclick="getCookie()">  
+<script>  
+    function setCookie()  
+    {  
+//Declaring 3 key-value pairs  
+        var info="Name="+ document.getElementById("name").value+";Email="+document.getElementById("email").value+";Course="+document.getElementById("course").value;  
+//Providing all 3 key-value pairs to a single cookie  
+        document.cookie=info;  
+    }  
+  
+    function getCookie()  
+    {  
+        if(document.cookie.length!=0)  
+        {  
+       //Invoking key-value pair stored in a cookie  
+        alert(document.cookie);  
+        }  
+        else  
+        {  
+        alert("Cookie not available")  
+        }  
+    }  
+</script>  
+</body>  
+</html> 

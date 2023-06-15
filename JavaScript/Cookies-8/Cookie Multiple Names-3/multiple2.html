@@ -1,0 +1,38 @@
+<!--example to store different name-value pairs in a cookie using JSON.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Name: <input type="text" id="name"><br>  
+    Email: <input type="email" id="email"><br>  
+    Course: <input type="text" id="course"><br>  
+<input type="button" value="Set Cookie" onclick="setCookie()">  
+<input type="button" value="Get Cookie" onclick="getCookie()">
+<script>
+    function setCookie(){
+        var obj = {} //creating custom object
+        obj.name = document.getElementById("name").value;
+        obj.email = document.getElementById("email").value;
+        obj.course = document.getElementById("course").value;
+        //Coverting Javascript object to JSON string
+        var jsonString = JSON.stringify(obj);
+        document.cookie = jsonString;
+    }
+    function getCookie(){
+        if(document.cookie.length!=0){
+            //parsing JSON string to json object
+            var obj = JSON.parse(document.cookie);
+            alert("Name: "+obj.name+" "+"Email: "+obj.email+" "+"Course: "+obj.course);
+        }
+        else{
+            alert("Cookie not available");
+        }
+    }
+</script>
+</body>
+</html>

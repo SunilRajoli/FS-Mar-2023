@@ -1,0 +1,38 @@
+<!--
+Javacsript Navigator Object:
+            It is used for browser detection.
+            It can be used to get the information such as appName, appCodeName, userAgent etc.
+            accessed by window.navigator or navigator.
+Property:
+            appName - returns the name.
+            appVersion - return the version.
+            appCodeName - return the code name.
+            cookieEnabled - return true if cookie is enabled.
+            userAgent - return the user agent.
+            Language - returns the language. It supports in Netscape and Firefox only.
+            userLanguage - return the user language. supports in IE.
+            plugins - returns the plugins. It supports in Netscape and Firefox only.
+            systemLanguage - returns the system language. supports in IE.
+            platform - return the paltform. eg.Win32
+            online - returns true if browser is online.
+methods:
+            javaEnabled - checks if java is enabled.
+            taintEnabled - checks if taint is enabled.
+-->
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h2>Navigator Object</h2>
+        <script>
+            document.writeln("</br> navigator.appCodeName:" +navigator.appCodeName);
+            document.writeln("</br> navigator.appName:" +navigator.appName);
+            document.writeln("</br> navigator.appVersion:" +navigator.appVersion);
+            document.writeln("</br> navigator.cookieEnabled:" +navigator.cookieEnabled);
+            document.writeln("</br> navigator.userAgent:" +navigator.userAgent);
+            document.writeln("</br> navigator.paltform:" +navigator.platform);
+            document.writeln("</br> navigator.online:" +navigator.onLine);
+        </script>
+    </body>
+</html>
